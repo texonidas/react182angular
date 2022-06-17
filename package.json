@@ -1,7 +1,7 @@
 {
-  "name": "react2angular",
-  "version": "4.0.6",
-  "description": "The easiest way to embed React components in Angular 1 apps!",
+  "name": "react182angular",
+  "version": "1.0.0",
+  "description": "The easiest way to embed React 18+ components in Angular 1 apps!",
   "main": "index.js",
   "main:esnext": "index.es2015.js",
   "typings": "index.d.ts",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/coatue-oss/react2angular.git"
+    "url": "git+ssh://git@github.com/texonidas/react182angular.git"
   },
   "keywords": [
     "react",
@@ -29,20 +29,20 @@
     "together",
     "embed"
   ],
-  "author": "Boris Cherny <boris@performancejs.com>",
+  "author": "Tex Andersen <tex.andersen@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/coatue-oss/react2angular/issues"
+    "url": "https://github.com/texonidas/react182angular/issues"
   },
-  "homepage": "https://github.com/coatue-oss/react2angular#readme",
+  "homepage": "https://github.com/texonidas/react182angular#readme",
   "peerDependencies": {
     "@types/angular": ">=1.5",
     "@types/prop-types": ">=15",
-    "@types/react": ">=16",
-    "@types/react-dom": ">=16",
+    "@types/react": ">=18",
+    "@types/react-dom": ">=18",
     "prop-types": ">=15",
-    "react": ">=15",
-    "react-dom": ">=15"
+    "react": ">=18",
+    "react-dom": ">=18"
   },
   "devDependencies": {
     "@types/angular": "^1.6.54",
