@@ -28,7 +28,7 @@ class TestOne extends React.Component<Props> {
   componentWillUnmount() { }
 }
 
-const TestTwo: React.StatelessComponent<Props> = props =>
+const TestTwo: React.FunctionComponent<Props> = props =>
   <div>
     <p>Foo: {props.foo}</p>
     <p>Bar: {props.bar.join(',')}</p>
@@ -36,7 +36,7 @@ const TestTwo: React.StatelessComponent<Props> = props =>
     {props.children}
   </div>
 
-const TestThree: React.StatelessComponent = () =>
+const TestThree: React.FunctionComponent = () =>
   <div>Foo</div>
 
 class TestFour extends React.Component<Props> {
