@@ -2,7 +2,7 @@ import { IAugmentedJQuery, IComponentOptions } from 'angular'
 import fromPairs = require('lodash.frompairs')
 import NgComponent from 'ngcomponent'
 import * as React from 'react'
-import { createRoot } from 'react-dom/client';
+import { createRoot } from 'react-dom/client'
 
 /**
  * Wraps a React component in Angular. Returns a new Angular component.
@@ -32,7 +32,7 @@ export function react2angular<Props>(
       }
       isDestroyed = false
       injectedProps: { [name: string]: any }
-      root = undefined
+      root = createRoot(this.$element[0]!)
       constructor(private $element: IAugmentedJQuery, ...injectedProps: any[]) {
         super()
         this.injectedProps = {}
@@ -41,9 +41,6 @@ export function react2angular<Props>(
         })
       }
       render() {
-        if (!this.root) {
-          this.root = createRoot(this.$element[0]!)
-        }
         if (!this.isDestroyed) {
           this.root.render(<Class {...this.props} {...this.injectedProps as any} />)
         }
