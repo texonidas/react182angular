@@ -183,6 +183,7 @@ bootstrap($(), ['test'], { strictDi: true })
 interface Props {
   bar: boolean[]
   baz(value: number): any
+  children?: React.ReactNode
   foo: number
 }
 
